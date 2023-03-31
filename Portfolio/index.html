@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UK-Compatible" content="IE=mozilla">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Myles' Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="annoymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src=" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web <span>Developer</span></p>
+            <h1>Hello, I'm <span>Myles</span><br>From Birmingham, England</h1> 
+        </div>
+    </div>
+</div>
+<!------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/phone.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Myles Taylor. I have always had an interest in Technology. 
+                    I have studied computing throughout my life, from School to University. 
+                    The idea of being able to create something through code has always been fascinating to me hence the decision to study Computer Science. I create projects in my spare time, extending my knowledge in Web Development.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML, CSS, JS, C#</li>
+                        <li><span>QA Tester</span><br>Manual/Automation Testing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2010-2015 School (Cockshut Hill)</span><br>9 GCSE's</li>
+                        <li><span>2015-2017 College (Solihull College)</span><br>BTEC IT Software Development</li>
+                        <li><span>2017-2020 University (Coventry University)</span><br>Computer Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code fa-spin fa-spin-reverse"></i>
+                <h2>Web Developement (HTML,CSS,JS)</h2>
+                <p>wfwffrgefrwefeereqrgwrg
+                    effefwfwf
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-laptop-code fa-spin fa-spin-reverse"></i>
+                <h2>Software Testing (Manual/Automation)</h2>
+                <p>wfwffrgefrwefeereqrgwrg
+                    fefewfefeffef
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/code-1.jpg">
+                <div class="layer">
+                    <h3>Demo Website</h3>
+                    <p>Demo demo demo demo demo demo demo</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/code-2.jpg">
+                <div class="layer">
+                    <h3>Demo Website</h3>
+                    <p>Demo demo demo demo demo demo demo</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/code-3.jpg">
+                <div class="layer">
+                    <h3>Demo Website</h3>
+                    <p>Demo demo demo demo demo demo demo</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+</body>
+</html>
