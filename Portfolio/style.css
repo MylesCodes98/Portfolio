@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box; 
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -293,4 +298,10 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+}
+
+#msg{
+    color: #fff;
+    margin-top: -40px;
+    display: block;
 }
